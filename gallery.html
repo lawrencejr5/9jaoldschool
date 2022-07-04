@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9jaoldschool/media</title>
+    <link rel="shortcut icon" href="oldschool.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.s">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <header>
+        <div class="logoo">
+            <center> <img src="oldschool.png" alt="logo" class="logo" height="20px" width="20px">
+                <br>
+                <span
+                    style="color: rgb(7, 175, 121); font-size: 20px; font-weight: 900; font-family: cursive;">9JA</span><span
+                    style="color: grey; font-size: 20px; font-weight: 900; font-family: cursive;">OLDSCHOOL</span>
+            </center>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="media.html" class="active">Media</a>
+            <a href="howto.html">How To</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="lets-talk.html">Let's Talk</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form action="" id="search-bx">
+                <input type="text" name="" id="search" placeholder="Search">
+                <input type="submit" name="" id="submit" value="&#x1F50E;&#xFE0E;" onclick="toggleSearch()">
+            </form>
+        </div>
+        <div class="container">
+            <center>
+                <div class="nav2">
+                    <a href="media.html"><button> Old Musics </button></a>
+                    <a href="cartoon.html"><button> Old Cartoons</button></a>
+                    <a href="gallery.html"><button class="active"> Old Pictures </button></a>
+                </div>
+            </center>
+        </div>
+    </nav>
+
+    <section>
+        <br><br>
+        <div class="container">
+            <h1 style="color: rgb(7, 175, 121);">Old Pictures:</h1>
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+    <script>
+        var loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>

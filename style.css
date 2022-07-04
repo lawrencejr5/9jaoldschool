@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#loader {
+    height: 100vh;
+    width: 100%;
+    background: rgb(105, 105, 105) url(loader4.gif) no-repeat center center;
+    z-index: 100;
+    position: fixed;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.logo {
+    height: 54px;
+    width: 70px;
+    margin-right: 3rem;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 0;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: rgb(7, 175, 121);
+    color: white;
+    margin-left: 0;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+#search-bx {
+    float: right;
+    margin-right: 2rem;
+    display: flex;
+}
+
+#search {
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    padding: 5px 3px;
+    margin-top: .4rem;
+    text-transform: capitalize;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 0rem;
+}
+
+#submit {
+    background-color: rgba(7, 175, 121);
+    color: white;
+    margin-left: .5rem;
+    margin-top: .4rem;
+    font-weight: 100;
+    height: 40px;
+    padding: 0px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#dyk,
+#cartoons {
+    margin-top: 5rem;
+}
+
+/* Slideshow begins */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    filter: brightness(30%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: white;
+    text-shadow: 1px 3px 1px #333;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 10s;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Slideshow ends */
+.more {
+    margin-top: .5rem;
+    background: rgb(7, 175, 121);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    float: right;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+#media {
+    margin-top: 5rem;
+}
+
+.latest-music {
+    display: block;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.latest-music li {
+    margin-top: 1rem;
+}
+
+.latest-music li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+
+}
+
+#articles {
+    margin-top: 5rem;
+}
+
+#grid-p {
+    font-size: 30px;
+    color: #333;
+}
+
+#cartoon-p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ctn-btn {
+    margin-top: 2rem;
+    background: rgb(7, 175, 121);
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    float: right;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#comment {
+    height: 200px;
+    width: 400px;
+    outline: none;
+}
+
+#comment-section {
+    background-color: rgb(7, 175, 121);
+    margin-top: 5rem;
+}
+
+#cmnt-btn {
+    background-color: rgb(7, 175, 121);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px 5px;
+}
+
+#cmnt-btn:hover {
+    color: rgb(7, 175, 121);
+    background-color: white;
+}
+
+#footer {
+    background: #333;
+    margin-top: 5rem;
+}
+
+#suscribe-email {
+    width: 100%;
+    background-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 50px;
+    outline: 0;
+    margin-bottom: .5rem;
+    border-bottom: 2px solid rgb(7, 175, 121);
+}
+
+#suscribe {
+    height: 45px;
+    width: 120px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(7, 175, 121);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#suscribe:hover {
+    color: rgb(7, 175, 121);
+    background-color: white;
+}
+
+#sus-p {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#footer-p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#footer-span {
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: white;
+}
+
+#resource-p {
+    color: whitesmoke;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    body {
+        background-position: inherit;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    #cartoon-img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 992px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+
+    #cartoon-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #submit {
+        background-color: #333;
+        padding: 8px 10px;
+    }
+
+    #search {
+        width: 150px;
+        display: none;
+    }
+
+    .text {
+        font-size: 20px
+    }
+
+    #grid-p {
+        font-size: 20px;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}

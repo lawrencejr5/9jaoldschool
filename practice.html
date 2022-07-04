@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Automatic Image Slider in HTML CSS | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .content {
+            height: 400px;
+            width: 750px;
+            overflow: hidden;
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .content .images {
+            height: 100%;
+            width: 100%;
+        }
+
+        .images img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="images">
+            <img src="9b28d9e671a3e2b6d234d3c36e460933--nigerian-civil-war-montage.jpg">
+            <img src="car-1772797.jpg">
+            <img src="Mary-Slessor-.jpg">
+            <img src="car-1772797.jpg">
+            <img src="9b28d9e671a3e2b6d234d3c36e460933--nigerian-civil-war-montage.jpg">
+        </div>
+    </div>
+    <script>
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 2500);
+            var x;
+            const img = document.querySelectorAll("img");
+            for (x = 0; x < img.length; x++) {
+                img[x].style.display = "none";
+            }
+            indexValue++;
+            if (indexValue > img.length) { indexValue = 1 }
+            img[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="oldschool.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div id="loader"></div>
+
+        <div class="logoo">
+            <center> <img src="oldschool.png" alt="logo" class="logo" height="20px" width="20px">
+                <br>
+                <span
+                    style="color: rgb(7, 175, 121); font-size: 20px; font-weight: 900; font-family: cursive;">9JA</span><span
+                    style="color: grey; font-size: 20px; font-weight: 900; font-family: cursive;">OLDSCHOOL</span>
+            </center>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="media.html">Media</a>
+            <a href="howto.html">How To</a>
+            <a href="funfacts.html">Fun Facts</a>
+            <a href="lets-talk.html">Let's Talk</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <form action="" id="search-bx">
+                <input type="text" name="" id="search" placeholder="Search">
+                <button type="button" name="" id="submit" onclick="toggleSearch()">&#x1F50E;&#xFE0E;</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <br><br><br><br><br><br><br>
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <br><br>
+            <p id="sus-p">
+                Suscribe with your email address to get latest updates on our website
+            </p>
+            <form action="">
+                <input type="email" placeholder="Email Address" id="suscribe-email" required>
+                <input type="submit" value="Suscribe" id="suscribe">
+            </form>
+        </div>
+        <br>
+        <center><img src="oldschool.png" alt="logo" class="logo" height="20px" width="20px"></center>
+        <br>
+        <center>
+            <span
+                style="color: rgb(7, 175, 121); font-size: 30px; font-weight: 900; font-family: cursive; margin-top: 2rem;">9JA</span>
+            <span
+                style="color: whitesmoke; font-size: 30px; font-weight: 900; font-family: cursive; margin-top: 2rem;">OLDSCHOOL</span>
+        </center>
+        <footer>
+            <div class="container p-3">
+                <div class="row">
+
+                    <div class="col" id="socio">
+                        <p id="footer-p">Social Media</p>
+                        <hr style="background-color: white">
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="instagram.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Follow Us On Instagram</span></a>
+                        </div>
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="telegram.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Join our channel on Telegram</span></a>
+                        </div>
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="whatsapp.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Dm us on Whatsapp</span></a>
+                        </div>
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="youtube.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Suscribe to our Youtube Channel</span></a>
+                        </div>
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="facebook.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Follow and like our Facebook Page</span></a>
+                        </div>
+                        <div class="col p-2"><a href="" style="text-decoration: none;">
+                                <img src="twitter.png" alt="" height="20px" width="20px">
+                                <span id="footer-span">Follow us on Twitter</span></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p id="footer-p">Resourses</p>
+                        <hr style="background-color: white">
+                        <div class="col">
+                            <p id="resource-p">Login</p>
+                        </div>
+                        <div class="col">
+                            <p id="resource-p">Sign up</p>
+                        </div>
+                        <div class="col">
+                            <p id="resource-p">Advertise With Us</p>
+                        </div>
+                        <div class="col">
+                            <p id="resource-p">Contact Us</p>
+                        </div>
+                        <div class="col">
+                            <p id="resource-p">Get Out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        var loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>
